@@ -1,0 +1,9 @@
+<div *ngIf="producto">
+    <h1>{{ producto.title }}</h1>
+    <p>{{ producto.description }}</p>
+    <p>Price: {{ producto.price }}</p>
+  
+    <div *ngFor="let imagen of producto.imagenes">
+      <img [src]="imagen.imagenString" alt="Imagen del producto" width="200">
+    </div>
+  </div>
